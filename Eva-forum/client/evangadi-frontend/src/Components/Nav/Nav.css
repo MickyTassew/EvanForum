@@ -1,0 +1,99 @@
+/* NavBar.css */
+
+.navbar {
+width: 100%;
+height: 100px;
+transition: all 0.3s ease;
+}
+.navbar > .container {
+margin: 0 250px;
+background-color: #f8f9fa;
+}
+.navbar.sticky {
+background-color: #f8f9fa;
+box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-logo {
+height: 40px;
+}
+
+.nav-txt {
+font-size: 16px;
+color: #333;
+}
+
+.nav-txt:hover {
+color: #007bff;
+}
+
+.nav-btn-container {
+display: flex;
+align-items: center;
+}
+
+.nav-btn {
+font-size: 16px;
+padding: 5px 10px;
+border-radius: 4px;
+}
+
+.btn-success {
+background-color: #516cf0 !important;
+border-color: #516cf0;
+}
+
+.btn-success:hover {
+background-color: #516cf0;
+border-color: #516cf0;
+}
+
+/* added */
+
+@media (max-width: 768px) {
+.navbar > .container {
+    margin: 0 20px;
+}
+
+.nav-txt {
+    font-size: 14px;
+}
+
+.nav-btn {
+    font-size: 14px;
+    padding: 4px 8px;
+}
+}
+
+@media (max-width: 576px) {
+.navbar {
+    height: auto;
+    padding: 10px 0;
+}
+
+.navbar > .container {
+    margin: 0 10px;
+}
+
+.nav-logo {
+    height: 30px;
+}
+
+.nav-txt {
+    font-size: 12px;
+}
+
+.nav-btn {
+    font-size: 12px;
+    padding: 3px 6px;
+}
+
+.nav-btn-container {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.nav-btn-container .nav-btn {
+    margin-top: 5px;
+}
+}
